@@ -175,7 +175,8 @@ consultationForm.addEventListener('submit', async function(e) {
         ageGroup: selectedAge,
         name: nameInput.value.trim(),
         phone: phoneInput.value,
-        callTime: document.querySelector('input[name="callTime"]:checked').value
+        callTime: document.querySelector('input[name="callTime"]:checked').value,
+        gift: document.querySelector('input[name="gift"]:checked').value
     };
 
     // 버튼 상태 변경
