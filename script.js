@@ -7,7 +7,6 @@ const leadFormSection = document.getElementById('leadForm');
 const consultationForm = document.getElementById('consultationForm');
 const submitBtn = document.getElementById('submitBtn');
 const successModal = document.getElementById('successModal');
-const todayCountElement = document.getElementById('todayCount');
 
 // ==================== 초기화 ====================
 document.addEventListener('DOMContentLoaded', function() {
@@ -16,7 +15,6 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeFormValidation();
     initializeScrollAnimations();
     initializeIntersectionObserver();
-    animateTodayCount();
 });
 
 // ==================== 연령대 선택 버튼 ====================
@@ -347,21 +345,7 @@ function initializeIntersectionObserver() {
 }
 
 // ==================== 오늘 상담 신청 수 애니메이션 ====================
-function animateTodayCount() {
-    const targetCount = 23;
-    const startCount = Math.max(1, targetCount - 5);
-    let currentCount = startCount;
-
-    const interval = setInterval(() => {
-        if (currentCount >= targetCount) {
-            clearInterval(interval);
-            return;
-        }
-
-        currentCount++;
-        todayCountElement.textContent = currentCount;
-    }, 200);
-}
+// 제거됨: todayCount 요소가 HTML에 없음
 
 // ==================== Bounce 애니메이션 ====================
 const style = document.createElement('style');
