@@ -191,9 +191,9 @@ body {
     line-height: 1.5;
 }
 
-/* 폼 그룹 */
+/* 폼 그룹 강제 업데이트 */
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 32px !important;
 }
 
 .form-label {
@@ -264,7 +264,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    margin-bottom: 5px;
 }
 
 .radio-option {
