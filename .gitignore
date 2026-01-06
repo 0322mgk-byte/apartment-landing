@@ -38,3 +38,6 @@ build/
 .temp/
 
 .vercel
+
+.vercel
+.env*.local
